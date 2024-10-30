@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* CSS to adjust the input box size */
+        #userGuess {
+            width: 180px; /* Set a smaller width */
+            padding: 7px; /* Optional: adjust padding for appearance */
+            font-size: 16px;
+        }
+        button {
+            padding: 7px 10px;
+            font-size: 16px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1><b><center>Number Guessing</center></b></h1>
+    <br><br>
+    <center><h3>Guess a number between number 1 to 10:</h3></center>
+
+    <!-- Guess this number -->
+    <center><input type="number" id="userGuess" min="1" max="10" placeholder="Enter your guess">
+    <button onclick="checkGuess()">Guess</button></center>
+    <p id="result"></p>
+
+    
+    <script src="app.js" defer></script>
+</body>
+</html>
